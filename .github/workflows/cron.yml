@@ -32,4 +32,4 @@ jobs:
           DATABASE_NAME: ${{ secrets.DATABASE_NAME }}
 
         run: |
-          python script.py
+          python index.py
