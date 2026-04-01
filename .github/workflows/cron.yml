@@ -48,6 +48,7 @@ jobs:
           SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
           DATABASE_NAME: ${{ secrets.DATABASE_NAME }}
+          G_CREDENTIALS: ${{ secrets.G_CREDENTIALS }}
 
         run: |
           python index.py

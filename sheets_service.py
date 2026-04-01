@@ -1,3 +1,7 @@
+import json
+import os
+
+from dotenv import load_dotenv
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
@@ -6,11 +10,13 @@ SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
 
 def get_sheets_service():
-    with open(CREDENTIALS_FILE, "r") as f:
-        print(f.read())
+    print(os.getenv("G_CREDENTIALS2"))
+    credentials_info = json.loads(os.getenv("G_CREDENTIALS"))
 
-    credentials = Credentials.from_service_account_file(
-        CREDENTIALS_FILE,
+    print(credentials_info)
+
+    credentials = Credentials.from_service_account_info(
+        credentials_info,
         scopes=SCOPES,
     )
     return build("sheets", "v4", credentials=credentials)
