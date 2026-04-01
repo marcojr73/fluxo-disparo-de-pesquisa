@@ -6,6 +6,9 @@ SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
 
 
 def get_sheets_service():
+    with open(CREDENTIALS_FILE, "r") as f:
+        print(f.read())
+
     credentials = Credentials.from_service_account_file(
         CREDENTIALS_FILE,
         scopes=SCOPES,
