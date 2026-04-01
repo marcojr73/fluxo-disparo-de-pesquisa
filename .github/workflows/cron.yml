@@ -22,6 +22,24 @@ jobs:
         run: |
           pip install -r requirements.txt
 
+      - name: Criar credentials.json
+        run: |
+          cat <<EOF > pesquisa-do-sono-a3a901e3c4d5.json
+          {
+            "type": "${{ secrets.G_TYPE }}",
+            "project_id": "${{ secrets.G_PROJECT_ID }}",
+            "private_key_id": "${{ secrets.G_PRIVATE_KEY_ID }}",
+            "private_key": "${{ secrets.G_PRIVATE_KEY }}",
+            "client_email": "${{ secrets.G_CLIENT_EMAIL }}",
+            "client_id": "${{ secrets.G_CLIENT_ID }}",
+            "auth_uri": "${{ secrets.G_AUTH_URI }}",
+            "token_uri": "${{ secrets.G_TOKEN_URI }}",
+            "auth_provider_x509_cert_url": "${{ secrets.G_AUTH_PROVIDER_X509_CERT_URL }}",
+            "client_x509_cert_url": "${{ secrets.G_CLIENT_X509_CERT_URL }}",
+            "universe_domain": "${{ secrets.G_UNIVERSE_DOMAIN }}"
+          }
+          EOF
+
       - name: Run script
         env:
           SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
