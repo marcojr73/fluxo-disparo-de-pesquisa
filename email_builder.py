@@ -28,7 +28,7 @@ def build_email_template(to, form_url):
 
                            <tr>
                                <td style="background:#2c3e50; color:#ffffff; padding:20px; text-align:center;">
-                                   <h1 style="margin:0; font-size:22px;">Avaliação do Sono</h1>
+                                   <h1 style="margin:0; font-size:22px;">Avaliação do Sono, Saúde mental e Risco de Lesões em Corredores</h1>
                                    <p style="margin:5px 0 0; font-size:14px;">Pesquisa de acompanhamento</p>
                                </td>
                            </tr>
@@ -38,17 +38,13 @@ def build_email_template(to, form_url):
                                    <p style="margin-top:0;">Olá,</p>
 
                                    <p>
-                                       Agradecemos pela sua participação na nossa 
-                                       <strong>Avaliação do Sono</strong>.
+                                       Agradecemos pela sua participação na nossa
+                                       <strong>Pesquisa de Iniciação Científica sobre Avaliação do Sono, Saúde mental e Risco de Lesões em Corredores.</strong>.
                                    </p>
 
                                    <p>
-                                       Para garantir a continuidade e qualidade da pesquisa, é essencial que você 
-                                       continue respondendo aos formulários sempre que solicitado.
-                                   </p>
-
-                                   <p>
-                                       Sua contribuição nos ajuda a obter resultados mais precisos e relevantes.
+                                       Para garantir a continuidade e qualidade da pesquisa, é essencial que você continue respondendo aos formulários que enviaremos por e-mail.
+                                       Sua contribuição nos ajuda a entender cada vez mais sobre esse esporte que tanto amamos.
                                    </p>
 
                                    <!-- Button -->
@@ -66,12 +62,12 @@ def build_email_template(to, form_url):
                                    </table>
 
                                    <p>
-                                       Caso tenha dúvidas ou dificuldades, nossa equipe está à disposição para ajudar.
+                                       Caso tenha dúvidas ou dificuldades, nossa equipe está a disposição para ajudar.
                                    </p>
 
                                    <p style="margin-bottom:0;">
                                        Atenciosamente,<br>
-                                       <strong>Equipe Avaliação do Sono</strong>
+                                       <strong>Equipe de Pesquisa de Iniciação Científica sobre Avaliação do Sono, Saúde mental e Risco de Lesões em Corredores.</strong>
                                    </p>
                                </td>
                            </tr>
